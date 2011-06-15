@@ -1,4 +1,6 @@
 
 span.footer { margin-left: 1em; font-size: smaller; }
-.packers .home { font-weight: bold; color: #0E7200; }
-.badgers .home { font-weight: bold; color: #D00000; }
+.home { font-weight: bold; }
+.mariners .home { color: #020060; }
+.packers .home { color: #0E7200; }
+.badgers .home { color: #D00000; }
