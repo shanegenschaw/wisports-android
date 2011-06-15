@@ -3,6 +3,7 @@ sag.packers = {
 	get: function () {
 		var data = {
 			title: "Packers",
+			styleClass: "packers",
 			games: [
 				new sag.Game(new Date(2011, 08, 08, 19, 30), 1, "New Orleans Saints"),
 				new sag.Game(new Date(2011, 08, 18, 12, 00), 0, "Carolina Panthers"),

@@ -13,7 +13,7 @@ public class WiSportsActivity extends DroidGap {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Toast.makeText(this, "Loading...", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "Loading...", Toast.LENGTH_SHORT).show();
 		super.loadUrl("file:///android_asset/www/index.html");
 	}
 

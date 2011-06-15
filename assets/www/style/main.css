@@ -1,3 +1,4 @@
 
 span.footer { margin-left: 1em; font-size: smaller; }
-.home .opponent { font-weight: bold; color: #0E7200; }
+.packers .home { font-weight: bold; color: #0E7200; }
+.badgers .home { font-weight: bold; color: #D00000; }

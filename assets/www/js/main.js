@@ -55,11 +55,11 @@ var sag = sag || {};
 		past.html("");
 		jQuery(data.games).each(function(index, game) {
 			var li = jQuery("<li>", {
-				"class": game.home ? "home" : "away"
+				"class": data.styleClass
 			});
 			jQuery("<h3>", { "class": "gametime" }).html(game.formatGameTime()).appendTo(li);
 			var p = jQuery("<p>", {
-				"class": "opponent"
+				"class": game.home ? "home" : "away"
 			});
 			if (game.home) {
 				p.html("vs " + game.opponent);

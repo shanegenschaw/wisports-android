@@ -3,6 +3,7 @@ sag.uwfb = {
 	get: function () {
 		var data = {
 			title: "UW Football",
+			styleClass: "badgers",
 			games: [
 				new sag.Game(new Date(2011, 08, 01, 00, 00), 1, "Las Vegas"),
 				new sag.Game(new Date(2011, 08, 10, 00, 00), 1, "Oregon State"),
