@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="jqm/jquery.mobile.min.css" />
+	<link rel="stylesheet" href="style/main.css" />
+	<script type="text/javascript" charset="utf-8" src="js/phonegap.0.9.5.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="jqm/jquery.mobile.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/packers.js"></script>
+	<script type="text/javascript" src="js/uwfb.js"></script>
+    <script type="text/javascript" charset="utf-8">
+	function onBodyLoad() {
+		sag.packers.initialize();
+		sag.uwfb.initialize();
+		document.addEventListener("deviceready",onDeviceReady,false);
+	}
+	
+	/* When this function is called, PhoneGap has been initialized and is ready to roll */
+	function onDeviceReady()
+	{
+		//initialize mgl js object	
+        //mgl.launch.initialize();
+		window.alert("Device ready!")
+        
+        //check for device connectivity and mgl mobile website availability
+        //navigator.network.isReachable('mygreatlakes.org', mgl.launch.checkConnection, {});
+	}
+    </script>
+  </head>
+  <body onload="onBodyLoad()">
+  
+<div data-role="page" id="welcome" data-theme="a">
+<div data-role="header"><h1>Welcome</h1></div>
+<div data-role="content">
+<ul data-role="listview">
+<li><a href="#schedule" id="packersLink"><h3>Packers</h3></a></li>
+<li><a href="#schedule" id="uwfbLink"><h3>UW Football</h3></a></li>
+</ul>
+</div>
+<div data-role="footer"><span class="footer">&copy; Shane Genschaw 2011</span></div>
+</div>
+
+<div data-role="page" id="schedule" data-theme="a">
+<div data-role="header"><h1>title</h1></div>
+<div data-role="content">
+<h2>Upcoming</h2>
+<ul data-role="listview" id="scheduleListUpcoming">
+</ul>
+<h2>Past</h2>
+<ul data-role="listview" id="scheduleListPast">
+</ul>
+</div>
+<div data-role="footer"><span class="footer">&copy; Shane Genschaw 2011</span></div>
+</div>
+
+  </body>
+</html>
