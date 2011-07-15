@@ -9,12 +9,10 @@
 	<script type="text/javascript" charset="utf-8" src="js/jquery-1.6.1.min.js"></script>
 	<script type="text/javascript" src="jqm/jquery.mobile.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/kllmariners.js"></script>
 	<script type="text/javascript" src="js/packers.js"></script>
 	<script type="text/javascript" src="js/uwfb.js"></script>
     <script type="text/javascript" charset="utf-8">
 	function onBodyLoad() {
-		sag.mariners.initialize();
 		sag.packers.initialize();
 		sag.uwfb.initialize();
 		document.addEventListener("deviceready",onDeviceReady,false);
@@ -38,7 +36,6 @@
 <div data-role="header"><h1>Welcome</h1></div>
 <div data-role="content">
 <ul data-role="listview">
-<li><a href="#schedule" id="marinersLink"><h3>KLL Mariners</h3></a></li>
 <li><a href="#schedule" id="packersLink"><h3>Packers</h3></a></li>
 <li><a href="#schedule" id="uwfbLink"><h3>UW Football</h3></a></li>
 </ul>
