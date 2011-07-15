@@ -31,6 +31,7 @@
          This file is an integral part of the build system for your
          application and should be checked into Version Control Systems. -->
     <property file="default.properties" />
+    <property file="sign.properties" />
 	
 	<!-- ================================= 
           target: help              
