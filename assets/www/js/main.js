@@ -5,10 +5,11 @@ var sag = sag || {};
 	var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 	var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 	
-	var Game = function (datetime, home, opponent) {
+	var Game = function (datetime, home, opponent, network) {
 		this.datetime = datetime;
 		this.home = home;
 		this.opponent = opponent;
+		this.network = network;
 		return this;
 	}
 	
@@ -57,7 +58,15 @@ var sag = sag || {};
 			var li = jQuery("<li>", {
 				"class": data.styleClass
 			});
-			jQuery("<h3>", { "class": "gametime" }).html(game.formatGameTime()).appendTo(li);
+			var h3 = jQuery("<h3>", { "class": "gametime" }); 
+			h3.html(game.formatGameTime());
+			if (game.network) {
+				h3.append(" on " + game.network);
+			}
+			if (game.home) {
+				h3.addClass("home");
+			}
+			h3.appendTo(li);
 			var p = jQuery("<p>", {
 				"class": game.home ? "home" : "away"
 			});
