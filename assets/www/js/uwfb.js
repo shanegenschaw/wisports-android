@@ -5,18 +5,18 @@ sag.uwfb = {
 			title: "UW Football",
 			styleClass: "badgers",
 			games: [
-				new sag.Game(new Date(2011, 08, 01, 00, 00), 1, "Las Vegas"),
-				new sag.Game(new Date(2011, 08, 10, 00, 00), 1, "Oregon State"),
-				new sag.Game(new Date(2011, 08, 17, 00, 00), 0, "Northern Illinois"),
-				new sag.Game(new Date(2011, 08, 24, 00, 00), 1, "South Dakota"),
-				new sag.Game(new Date(2011, 09, 01, 00, 00), 1, "Nebraska"),
-				new sag.Game(new Date(2011, 09, 15, 00, 00), 1, "Indiana"),
-				new sag.Game(new Date(2011, 09, 22, 00, 00), 0, "Michigan State"),
-				new sag.Game(new Date(2011, 09, 29, 00, 00), 0, "Ohio State"),
-				new sag.Game(new Date(2011, 10, 05, 00, 00), 1, "Purdue"),
-				new sag.Game(new Date(2011, 10, 12, 00, 00), 0, "Minnesota"),
-				new sag.Game(new Date(2011, 10, 19, 00, 00), 0, "Illinois State"),
-				new sag.Game(new Date(2011, 10, 26, 00, 00), 1, "Penn State")
+				new sag.Game(new Date(2013, 07, 31, 11, 00), 1, "UMass", "BTN"),
+				new sag.Game(new Date(2013, 08, 07, 11, 00), 1, "Tennessee Tech"),
+				new sag.Game(new Date(2013, 08, 14, 21, 30), 0, "Arizona State"),
+				new sag.Game(new Date(2013, 08, 21, 00, 00), 1, "Purdue"),
+				new sag.Game(new Date(2013, 08, 28, 19, 00), 0, "Ohio State"),
+				new sag.Game(new Date(2013, 09, 12, 14, 30), 1, "Northwestern"),
+				new sag.Game(new Date(2013, 09, 19, 19, 00), 0, "Illinois"),
+				new sag.Game(new Date(2013, 10, 02, 00, 00), 0, "Iowa"),
+				new sag.Game(new Date(2013, 10, 09, 00, 00), 1, "BYU"),
+				new sag.Game(new Date(2013, 10, 16, 00, 00), 1, "Indiana"),
+				new sag.Game(new Date(2013, 10, 23, 00, 00), 0, "Minnesota"),
+				new sag.Game(new Date(2013, 10, 30, 00, 00), 1, "Penn State")
 			]
 		};
 		return data;
